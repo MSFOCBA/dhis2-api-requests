@@ -8,6 +8,14 @@ The field `server_url` depends on the requested server. For example, it could be
 
 The following sections deal only with the `request` field of the URL.
 
+### Exporting data to MS Excel Table
+Sometimes is useful to open the information in an excel table to sort, filter, reorder the colomns or just save the information. The steps to do that are the following:
+
+1. Do the request. The information you want to save should be displayed in the web browser.
+2. Right-click on the screen and click on "Save as...". Then save the ".xml" somewhere in your computer.
+3. Open the ".xml" file with MS Excel. A dialog will be prompted, then choose "XML table". A new dialog will appear, just accept it.
+4. Now, you should be able to see a MS Excel table with the information.
+
 ## Data Elements
 ### List of dataelements with some information (Tally Sheet)
 List all dataelements
