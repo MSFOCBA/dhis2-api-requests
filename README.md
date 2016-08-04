@@ -20,13 +20,13 @@ Sometimes is useful to open the information in an excel table to sort, filter, r
 ### List of dataelements with some information (Tally Sheet)
 List all dataelements
 
-`/dataElements?paging=false&fields=id,code,name,formName,description,categoryCombo[name],dataElementGroups[name],dataSets[name,code]`
+`/dataElements?paging=false&fields=id,code,displayName,displayFormName,displayDescription,categoryCombo[name],dataElementGroups[name],dataSets[name,code]`
 
 ## Indicators
 ### List indicators with all fields
 List all the indicators in the system with description, numerator, denominator and factor (unit, per houndred, per thousand, etc).
 
-`/indicators?paging=false&fields=id,code,name,description,numeratorDescription,denominatorDescription,indicatorType[name],indicatorGroups[name]`
+`/indicators?paging=false&fields=id,code,displayName,displayDescription,numeratorDescription,denominatorDescription,indicatorType[name],indicatorGroups[name]`
 
 ## Filters
 You can use any field to filter a request. To apply a filter you only have to append it to the URL.
@@ -43,3 +43,9 @@ If you want to filter by a field, but you don't know exactly the value of the fi
 
 `filter=name:like:malaria`
 
+## Laguanges
+By default, the API gives the information in language of your user. To choose a different language you only have to append the following syntax to the url:
+
+`&locale=en`
+
+The field `locale` can have the values `en`, `fr`, `es` or `pt`.
