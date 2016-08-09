@@ -28,7 +28,7 @@ List all the indicators in the system with description, numerator, denominator a
 
 `/indicators?paging=false&fields=id,code,displayName,displayDescription,numeratorDescription,denominatorDescription,indicatorType[name],indicatorGroups[name]`
 
-# Datasets
+## Datasets
 ### List all the datasets associated to a health site and to its services (eg. health site uid: EtI7MO3ou8C):
 `/organisationUnits/EtI7MO3ou8C?fields=children[name,dataSets[name]],dataSets[name]`
 
