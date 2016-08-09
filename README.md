@@ -28,6 +28,10 @@ List all the indicators in the system with description, numerator, denominator a
 
 `/indicators?paging=false&fields=id,code,displayName,displayDescription,numeratorDescription,denominatorDescription,indicatorType[name],indicatorGroups[name]`
 
+# Datasets
+### List all the datasets associated to a health site and to its services (eg. health site uid: EtI7MO3ou8C):
+`/organisationUnits/EtI7MO3ou8C?fields=children[name,dataSets[name]],dataSets[name]`
+
 ## Filters
 You can use any field to filter a request. To apply a filter you only have to append it to the URL.
 
@@ -43,9 +47,11 @@ If you want to filter by a field, but you don't know exactly the value of the fi
 
 `filter=name:like:malaria`
 
-## Laguanges
+## Languages
 By default, the API gives the information in language of your user. To choose a different language you only have to append the following syntax to the url:
 
 `&locale=en`
 
 The field `locale` can have the values `en`, `fr`, `es` or `pt`.
+
+NB: Does not seem to work with 'sub-requests' in 2.21 (it does work in 2.24 though).
